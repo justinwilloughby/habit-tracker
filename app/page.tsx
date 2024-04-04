@@ -232,7 +232,7 @@ export default function Home() {
                 <Calendar
                   mode="single"
                   selected={date}
-                  onSelect={setDate}
+                  onSelect={(day: Date | undefined) => setDate(day || new Date())}
                   initialFocus
                 />
               </PopoverContent>
