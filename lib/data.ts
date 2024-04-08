@@ -3,7 +3,7 @@ import { unstable_noStore as noStore } from 'next/cache';
 import { Entry, Streak } from './definitions';
 
 export async function fetchEntries() {
-    noStore();
+    // noStore();
 
     try {
         console.log('Fetching entries...');
@@ -23,7 +23,7 @@ export async function fetchEntries() {
 }
 
 export async function fetchCurrentStreak() {
-    noStore();
+    // noStore();
 
     try {
         console.log('Fetching current streak...');

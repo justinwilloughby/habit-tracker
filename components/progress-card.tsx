@@ -12,7 +12,7 @@ export const ProgressCard = async () => {
   });
 
   // Create an array of date objects starting with the first day in the list and ending with today. This can span multiple weeks.
-  const startDate = new Date(entries[0].date);
+  const startDate = entries[0] ? new Date(entries[0].date) : new Date();
   const endDate = new Date();
   const dateArray = [];
   let currentDate = startDate;
@@ -22,7 +22,7 @@ export const ProgressCard = async () => {
     } else {
       dateArray.push({
         date: currentDate.toISOString().split("T")[0],
-        status: null,
+        status: 'Nothing',
       });
     }
     currentDate = new Date(currentDate.getTime() + 1000*60*60*24);
@@ -79,7 +79,7 @@ export const ProgressCard = async () => {
                   ></div>
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>{day.date}</p>
+                  <p>{new Date(day.date).toISOString().split('T')[0]}</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
