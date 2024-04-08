@@ -38,7 +38,7 @@ export const SubmitCard = () => {
           <Button
             variant={"outline"}
             className={cn(
-              "w-[200px] justify-start text-left font-normal",
+              "w-full min-w-[200px] justify-start text-left font-normal",
               !date && "text-muted-foreground",
             )}
           >
