@@ -1,3 +1,9 @@
+# Habit Tracker
+
+Simple habit tracker app that I made to learn Next and Clerk. Only tracks one habit at a time. I took inspiration from the Github contributions component. I really liked the asthetic and thought it would be a good way to visualize a streak in a habit app. Built with Next, Clerk, and Vercel Postgres. Deployed to Vercel.
+
+![Habit Tracker](habit-tracker.png "Habit Tracker App")
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
